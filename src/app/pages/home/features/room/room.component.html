@@ -1,0 +1,21 @@
+<app-banner-info
+  [title]="'Elige tu Habitación'"
+  [description]="
+    'Disfruta de una experiencia agradable y acogedora en el confort y la comodidad de nuestras habitaciones'
+  "
+  [breadcrumb]="'Habitaciones'"
+/>
+<app-postbanner-design>
+  <div content class="grid grid-cols-2 gap-4">
+    <app-card-variant-personality
+      *ngFor="let room of rooms"
+      [image]="room.image"
+      [title]="room.title"
+      [infoRoom]="room.infoRoom"
+      [description]="room.description"
+      [showExtraInfo]="room.showExtraInfo"
+      [showButton]="room.showButton"
+    />
+  </div>
+</app-postbanner-design>
+<app-footer />

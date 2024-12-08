@@ -1,0 +1,30 @@
+<div class="relative h-[91.8vh] w-full">
+  <img
+    src="./images/Fondos/huacachina-9.jpg"
+    alt="bg"
+    class="absolute inset-0 w-full h-full object-cover"
+  />
+
+  <div class="absolute inset-0 flex flex-col items-center justify-center ,">
+    <h1 class="text-8xl font-bold mb-40">Bienvenidos al Hotel Royal</h1>
+
+    <div
+      class="flex w-2/5 bg-white/80 text-black items-center justify-center gap-4 p-2 rounded-xl"
+    >
+      <span class="text-yellow-700 text-xl font-bold">Reserva Directa</span>
+      <p-floatlabel variant="in" class="text-xs">
+        <p-datepicker
+          placeholder=""
+          [(ngModel)]="date"
+          [iconDisplay]="'input'"
+          [showIcon]="true"
+          inputId="icondisplay"
+        />
+        <label for="title-date-label">Fecha Llegada - Fecha Salida</label>
+      </p-floatlabel>
+      <div class="flex justify-center">
+        <p-button class="text-xs" label="Comprobar Disponibilidad" severity="warn" />
+      </div>
+    </div>
+  </div>
+</div>

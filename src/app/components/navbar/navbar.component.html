@@ -1,0 +1,16 @@
+<p-menubar [model]="items">
+  <ng-template #start>
+    <a routerLink="" class="card flex justify-center p-menubar-end">
+      <p-image src="./images/Logo Hotel/logo2.png" alt="Image" class="w-20" />
+    </a>
+  </ng-template>
+  <ng-template #item let-item let-root="root">
+    <a
+      routerLink="/home/{{ item.link }}"
+      pRipple
+      class="flex items-center justify-center p-menubar-item-link"
+    >
+      <span>{{ item.label }}</span>
+    </a>
+  </ng-template>
+</p-menubar>

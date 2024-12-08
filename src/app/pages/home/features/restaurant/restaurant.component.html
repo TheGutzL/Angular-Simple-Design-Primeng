@@ -1,0 +1,21 @@
+<app-banner-info
+  [title]="'Bienvenidos a nuestro restaurante'"
+  [description]="
+    'Te invitamos a ser partícipe de una deliciosa experiencia gastronómica en nuestro restaurante. Preparamos cada plato de forma especial pensando en ti.'
+  "
+  [breadcrumb]="'Bar Restaurante'"
+/>
+<app-postbanner-design>
+  <div content class="grid grid-cols-2 gap-4">
+    <app-card-variant-personality
+      [image]="'./images/Habitaciones/Habitacion 1.png'"
+      [title]="'Deluxe'"
+      [description]="
+        'Disfruta de una experiencia llena de confort en acogedora habitación con una cama de 2 plazas, con escritorio, silla, armario, veladores, toallas, amenities, Smart TV y balcón con muebles de terraza.'
+      "
+      [showExtraInfo]="true"
+      [showButton]="true"
+    />
+  </div>
+</app-postbanner-design>
+<app-footer />

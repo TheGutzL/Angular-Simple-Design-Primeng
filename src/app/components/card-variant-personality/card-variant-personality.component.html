@@ -1,0 +1,26 @@
+<div class="bg-white/90 flex flex-col text-black p-4 rounded-md h-fit">
+  <img src="{{ image }}" alt="habitacion" class="w-full h-2/5" />
+  <div class="flex flex-col gap-2 mt-2">
+    <div
+      *ngIf="showExtraInfo"
+      class="flex flex-row items-center justify-start gap-2"
+    >
+      <i class="pi pi-list"></i>
+      <span class="text-xs font-medium">{{infoRoom}}</span>
+    </div>
+    <span class="font-bold text-2xl">{{ title }}</span>
+    <p class="text-sm">
+      {{ description }}
+    </p>
+    
+    <p-toast />
+    <p-button
+      *ngIf="showButton"
+      label="Reserva ya"
+      severity="warn"
+      [raised]="true"
+      icon="pi pi-bookmark"
+      (onClick)="show()"
+    />
+  </div>
+</div>

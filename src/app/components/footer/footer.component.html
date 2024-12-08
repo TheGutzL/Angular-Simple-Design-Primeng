@@ -1,0 +1,109 @@
+<footer class="bg-hero-pattern bg-cover bg-center">
+  <div class="bg-black bg-opacity-50 p-4">
+    <div class="container mx-auto flex justify-between items-center">
+      <div class="flex flex-col">
+        <img src="./images/Logo Hotel/logo2.png" alt="Logo" class="w-40" />
+        <div>
+          <p-button
+            icon="pi pi-phone"
+            [rounded]="true"
+            [text]="true"
+            severity="warn"
+          />
+          <span>+51 920 761 949</span>
+        </div>
+        <div>
+          <p-button
+            icon="pi pi-address-book"
+            [rounded]="true"
+            severity="warn"
+            [text]="true"
+          />
+
+          <span>reservas&#64;hotelroyal.pe</span>
+        </div>
+        <div>
+          <p-button
+            icon="pi pi-map-marker"
+            [rounded]="true"
+            severity="warn"
+            [text]="true"
+            class="!text-yellow-500"
+          />
+
+          <span
+            >Av. La Rinconada D-5 Urb. La Estancia de Huacachina Ica-Peru</span
+          >
+        </div>
+
+        <div class="flex justify-center items-center gap-2">
+          <p-button
+            icon="pi pi-facebook"
+            [rounded]="true"
+            severity="warn"
+            [text]="true"
+            size="large"
+          />
+          <p-button
+            icon="pi pi-whatsapp"
+            [rounded]="true"
+            severity="warn"
+            [text]="true"
+            size="large"
+          />
+          <p-button
+            icon="pi pi-instagram"
+            [rounded]="true"
+            severity="warn"
+            [text]="true"
+            size="large"
+          />
+        </div>
+
+        <div class="flex mt-4 justify-center items-center gap-4">
+          <img
+            src="./images/logos tarjetas/MasterCard-Logo.svg.png"
+            alt="master card"
+            class="w-20"
+          />
+          <img
+            src="./images/logos tarjetas/VISA-Logo.png"
+            alt="Visa"
+            class="w-20"
+          />
+        </div>
+      </div>
+      <div>
+        <span class="text-yellow-600 font-bold">Hotel Royal</span>
+        <ul class="flex flex-col gap-4">
+          <a routerLink="/home/landing-page">Inicio</a>
+          <a routerLink="/home/room">Habitaciones</a>
+          <a routerLink="/home/activity">Actividades</a>
+          <a routerLink="/home/about">Filosifía</a>
+          <a routerLink="/home/restaurant">Bar Restaurante</a>
+        </ul>
+      </div>
+      <div class="flex flex-col text-center gap-4">
+        <span class="text-yellow-600 font-bold">Informes</span>
+        <p-floatlabel variant="in">
+          <input id="name" pInputText [(ngModel)]="name" />
+          <label for="name">Tu Nombre</label>
+        </p-floatlabel>
+        <p-floatlabel variant="in">
+          <input id="email" pInputText [(ngModel)]="email" />
+          <label for="email">Tu correo electronico</label>
+        </p-floatlabel>
+        <p-floatlabel variant="in">
+          <input id="phone" pInputText [(ngModel)]="phone" />
+          <label for="phone">Tu telefono</label>
+        </p-floatlabel>
+        <p-button
+          label="Enviar"
+          severity="warn"
+          icon="pi pi-check"
+          iconPos="right"
+        />
+      </div>
+    </div>
+  </div>
+</footer>
