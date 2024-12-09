@@ -5,12 +5,12 @@ import {
   Ripple
 } from "./chunk-JGV2K4XC.js";
 import {
+  SpinnerIcon
+} from "./chunk-MHZEQ2SR.js";
+import {
   Badge,
   BadgeModule
 } from "./chunk-UC3A6OGW.js";
-import {
-  SpinnerIcon
-} from "./chunk-MHZEQ2SR.js";
 import {
   BaseComponent
 } from "./chunk-NVTHC7N5.js";
@@ -2043,4 +2043,4 @@ export {
   Button,
   ButtonModule
 };
-//# sourceMappingURL=chunk-W3ZIQOJM.js.map
+//# sourceMappingURL=chunk-PPSPXLH6.js.map

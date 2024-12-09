@@ -5,10 +5,6 @@ import {
   Ripple
 } from "./chunk-JGV2K4XC.js";
 import {
-  Badge,
-  BadgeModule
-} from "./chunk-UC3A6OGW.js";
-import {
   zindexutils
 } from "./chunk-6EUKM3X6.js";
 import {
@@ -17,18 +13,20 @@ import {
   BarsIcon
 } from "./chunk-MHZEQ2SR.js";
 import {
+  RouterLink,
+  RouterLinkActive,
+  RouterModule
+} from "./chunk-YUBHL6TZ.js";
+import {
+  Badge,
+  BadgeModule
+} from "./chunk-UC3A6OGW.js";
+import {
   BaseComponent
 } from "./chunk-NVTHC7N5.js";
 import {
   BaseStyle
 } from "./chunk-PHRQN7ZN.js";
-import {
-  RouterLink,
-  RouterLinkActive,
-  RouterModule
-} from "./chunk-4XXCSJIK.js";
-import "./chunk-4IZBS42U.js";
-import "./chunk-J5F2WIUN.js";
 import {
   SharedModule,
   appendChild,
@@ -50,6 +48,7 @@ import {
   resolve,
   uuid
 } from "./chunk-V2LXRIDE.js";
+import "./chunk-PS5OVIZ2.js";
 import {
   CommonModule,
   DOCUMENT,
