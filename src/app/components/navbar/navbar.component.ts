@@ -8,6 +8,7 @@ import { Image } from 'primeng/image';
 import { InputTextModule } from 'primeng/inputtext';
 import { Menubar } from 'primeng/menubar';
 import { Ripple } from 'primeng/ripple';
+import {ButtonModule} from 'primeng/button';
 
 @Component({
   selector: 'navbar-user',
@@ -21,6 +22,7 @@ import { Ripple } from 'primeng/ripple';
     CommonModule,
     Image,
     RouterLink,
+    ButtonModule
   ],
   templateUrl: './navbar.component.html',
   styleUrl: './navbar.component.scss',

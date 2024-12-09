@@ -5,6 +5,9 @@ import { BannerInfoComponent } from '../../../../components/banner-info/banner-i
 import { CardVariantPersonalityComponent } from '../../../../components/card-variant-personality/card-variant-personality.component';
 import { FooterComponent } from '../../../../components/footer/footer.component';
 import { PostbannerDesignComponent } from '../../../../components/postbanner-design/postbanner-design.component';
+import { drinksData } from '../../../../data/drinks-data';
+import { foodsData } from '../../../../data/foods-data';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-restaurant',
@@ -14,10 +17,14 @@ import { PostbannerDesignComponent } from '../../../../components/postbanner-des
     BannerInfoComponent,
     PostbannerDesignComponent,
     CardModule,
+    CommonModule,
     ButtonModule,
     CardVariantPersonalityComponent,
   ],
   templateUrl: './restaurant.component.html',
   styleUrl: './restaurant.component.scss',
 })
-export default class RestaurantComponent {}
+export default class RestaurantComponent {
+  drinks = drinksData;
+  foods = foodsData;
+}

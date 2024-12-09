@@ -22,6 +22,10 @@ export default [
     loadComponent: () => import('../activity/activity.component'),
   },
   {
+    path: 'reservation',
+    loadComponent: () => import('../reservation/reservation.component'),
+  },
+  {
     path: '**',
     redirectTo: 'landing-page',
   },

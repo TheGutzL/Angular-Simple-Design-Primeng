@@ -6,16 +6,44 @@
   [breadcrumb]="'Bar Restaurante'"
 />
 <app-postbanner-design>
-  <div content class="grid grid-cols-2 gap-4">
-    <app-card-variant-personality
-      [image]="'./images/Habitaciones/Habitacion 1.png'"
-      [title]="'Deluxe'"
-      [description]="
-        'Disfruta de una experiencia llena de confort en acogedora habitación con una cama de 2 plazas, con escritorio, silla, armario, veladores, toallas, amenities, Smart TV y balcón con muebles de terraza.'
-      "
-      [showExtraInfo]="true"
-      [showButton]="true"
-    />
+  <div content>
+    <div class="flex items-center justify-center gap-8">
+      <img src="./images/Restaurante/Img-restaurante.png" alt="restaurante" />
+      <div class="flex flex-col items-center text-black gap-4">
+        <h2 class="text-6xl font-bold">
+          Te invitamos a visitar nuestro restaurante
+        </h2>
+        <p class="font-bold">
+          Tenemos una variedad de platos peruanos e internacionales, preparados
+          con productos selectos y frescos, de alta calidad. Nuestra finalidad
+          es que explores un mundo de aromas, texturas y sabores con nuestros
+          platos.
+        </p>
+        <p-button label="Ver Carta" severity="warn" />
+      </div>
+    </div>
+    <div>
+      <h3>Bebidas destacadas</h3>
+      <div class="grid grid-cols-3 gap-4">
+        <app-card-variant-personality
+          *ngFor="let drink of drinks"
+          [image]="drink.image"
+          [title]="drink.title"
+          [description]="drink.description"
+        />
+      </div>
+    </div>
+    <div>
+      <h3>Comidas destacadas</h3>
+      <div class="grid grid-cols-3 gap-4">
+        <app-card-variant-personality
+          *ngFor="let food of foods"
+          [image]="food.image"
+          [title]="food.title"
+          [description]="food.description"
+        />
+      </div>
+    </div>
   </div>
 </app-postbanner-design>
 <app-footer />
